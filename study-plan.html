@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Learning Preferences</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell onboarding-step-screen">
+    <!-- Top Back Arrow & Step 3 of 4 Progress -->
+    <header class="step-header">
+      <a href="select-subjects.html" class="back-btn" aria-label="Go back">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </a>  <div class="step-indicator">
+    <span class="step-label">STEP 3 OF 4</span>
+    <div class="step-bar" aria-hidden="true">
+      <span class="step-segment active"></span>
+      <span class="step-segment active"></span>
+      <span class="step-segment active"></span>
+      <span class="step-segment"></span>
+    </div>
+  </div>
+
+  <span class="header-spacer" aria-hidden="true"></span>
+</header>
+
+<!-- Learning Goals Form -->
+<form class="step-form" action="setup-complete.html" method="GET">
+  <div class="step-content">
+    <h1 class="step-title">Set your learning goals</h1>
+    <p class="step-subtitle">Let's create a study routine that works for you.</p>
+
+    <!-- Question 1: Daily Study Time -->
+    <p class="pref-question">How much time can you study daily</p>
+    <div class="time-grid" role="radiogroup" aria-label="Daily study time">
+      <label class="time-card">
+        <input type="radio" name="daily_time" value="15 min" class="pref-radio sr-only" />
+        <span>15 min</span>
+      </label>
+
+      <label class="time-card">
+        <input type="radio" name="daily_time" value="30 min" class="pref-radio sr-only" checked />
+        <span>30 min</span>
+      </label>
+
+      <label class="time-card">
+        <input type="radio" name="daily_time" value="1 hour" class="pref-radio sr-only" />
+        <span>1 hour</span>
+      </label>
+
+      <label class="time-card">
+        <input type="radio" name="daily_time" value="2+ hours" class="pref-radio sr-only" />
+        <span>2+ hours</span>
+      </label>
+    </div>
+
+    <!-- Question 2: Preferred Time of Day -->
+    <p class="pref-question">When do you prefer to study?</p>
+    <div class="period-grid" role="radiogroup" aria-label="Preferred study period">
+      <!-- Morning -->
+      <label class="period-card">
+        <input type="radio" name="study_period" value="Morning" class="pref-radio sr-only" checked />
+        <div class="period-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="11" r="4" fill="#facc15" />
+            <path d="M12 3v2M12 17v1M4.22 5.22l1.42 1.42M18.36 5.22l-1.42 1.42M3 11h2M19 11h2" stroke="#facc15" stroke-width="2" stroke-linecap="round"/>
+            <path d="M6 17h12a3 3 0 0 0 0-6h-.4A5 5 0 0 0 8 10.5 3.5 3.5 0 0 0 6 17z" fill="#38bdf8"/>
+          </svg>
+        </div>
+        <span>Morning</span>
+      </label>
+
+      <!-- Afternoon -->
+      <label class="period-card">
+        <input type="radio" name="study_period" value="Afternoon" class="pref-radio sr-only" />
+        <div class="period-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="5" fill="#facc15"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="#facc15" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span>Afternoon</span>
+      </label>
+
+      <!-- Evening -->
+      <label class="period-card">
+        <input type="radio" name="study_period" value="Evening" class="pref-radio sr-only" />
+        <div class="period-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#0e46b5">
+            <path d="M21 12.
+            79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </div>
+        <span>Evening</span>
+      </label>
+
+      <!-- Anytime -->
+      <label class="period-card">
+        <input type="radio" name="study_period" value="Anytime" class="pref-radio sr-only" />
+        <div class="period-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1e293b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"></circle>
+            <polyline points="12 7 12 12 15 14"></polyline>
+          </svg>
+        </div>
+        <span>Anytime</span>
+      </label>
+    </div>
+
+    <!-- Question 3: Preparation Goal -->
+    <p class="pref-question">Your preparation goal</p>
+    <div class="goal-grid" role="radiogroup" aria-label="Preparation goal">
+      <!-- Improve my understanding -->
+      <label class="goal-card">
+        <input type="radio" name="prep_goal" value="Improve my understanding" class="pref-radio sr-only" checked />
+        <span class="goal-check-badge" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </span>
+        <div class="goal-icon" aria-hidden="true">
+          <!-- Trophy Icon -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#f59e0b">
+            <path d="M6 3h12v4a6 6 0 0 1-12 0V3zm-3 2h2v3a3 3 0 0 1-3-3h1zm18 0h-2v3a3 3 0 0 0 3-3h-1zM9 15h6v3H9v-3zm-2 3h10v2H7v-2z"/>
+          </svg>
+        </div>
+        <span class="goal-label">Improve my understanding</span>
+      </label>
+
+      <!-- Prepare for my examination -->
+      <label class="goal-card">
+        <input type="radio" name="prep_goal" value="Prepare for my examination" class="pref-radio sr-only" />
+        <span class="goal-check-badge" aria-hidden="true">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </span>
+        <div class="goal-icon" aria-hidden="true">
+          <!-- Person Reading Book Icon -->
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#1b873f">
+            <circle cx="12" cy="5" r="2.5"/>
+            <path d="M4 11l8 3 8-3v7l-8 3-8-3v-7z"/>
+          </svg>
+        </div>
+        <span class="goal-label">Prepare for my examination</span>
+      </label>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-pill">Continue</button>
+</form>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell dashboard-screen">
+    <!-- Top Header Bar -->
+    <header class="dash-header">
+      <button type="button" class="icon-btn" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <button type="button" class="icon-btn" aria-label="Scan question">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 7V5a2 2 0 0 1 2-2h2"></path>
+          <path d="M17 3h2a2 2 0 0 1 2 2v2"></path>
+          <path d="M21 17v2a2 2 0 0 1-2 2h-2"></path>
+          <path d="M7 21H5a2 2 0 0 1-2-2v-2"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+      </button>
+    </header>
+
+    <!-- Main Dashboard Content -->
+    <div class="dash-body">
+      <section class="dash-greeting">
+        <h1 class="dash-title">Hello, Ada!</h1>
+        <p class="dash-subtitle">Keep going! You're on track</p>
+      </section>
+
+      <!-- Overall Progress Navy Card -->
+      <section class="progress-banner" aria-label="Overall Progress">
+        <div class="progress-banner-top">
+          <div>
+            <span class="progress-label">Overall Progress</span>
+            <p class="progress-percent">72%</p>
+          </div>
+
+          <div class="banner-trophy" aria-hidden="true">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="#facc15">
+              <path d="M6 3h12v4a6 6 0 0 1-12 0V3zm-3 2h2v3a3 3 0 0 1-3-3h1zm18 0h-2v3a3 3 0 0 0 3-3h-1zM9 15h6v3H9v-3zm-2 3h10v2H7v-2z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="progress-track" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-fill" style="width: 72%;"></div>
+        </div>
+      </section>
+
+      <!-- 3-Column Stats Row -->
+      <section class="stats-grid" aria-label="Study Statistics">
+        <div class="stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <!-- Flame Icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#f97316">
+              <path d="M12 2c.5 3.5-2 5.5-2 8.5 0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5c0-.9-.4-1.8-1-2.5 2.5 1 4.5 3.6 4.5 6.5A6.5 6.5 0 0 1 12 21a6.5 6.5 0 0 1-6.5-6.5C5.5 10.2 8.5 6.2 12 2z"/>
+            </svg>
+          </div>
+          <span class="stat-value">7</span>
+          <span class="stat-name">Day Streak</span>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <!-- Green Check Circle -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#16a34a">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="8 12.5 10.8 15.3 16.5 9.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            </svg>
+          </div>
+          <span class="stat-value">12/20</span>
+          <span class="stat-name">Practice Done</span>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon" aria-hidden="true">
+            <!-- Gold Star Icon -->
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#facc15">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <span class="stat-value">65%</span>
+          <span class="stat-name">Avg Score</span>
+        </div>
+      </section>
+
+      <!-- 2x2 Feature Cards Grid -->
+      <section class="feature-grid" aria-label="Quick Actions">
+        <!-- Past Questions -->
+        <a href="practice.html" class="feature-card">
+          <div class="feature-card-top">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </span>
+            <span class="feature-arrow" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+          <h2 class="feature-title">Past Questions</h2>
+          <p class="feature-desc">Verified past questions</p>
+        </a>
+
+        <!-- Syllabus -->
+        <a href="syllabus.html" class="feature-card">
+          <div class="feature-card-top">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="8" y1="13" x2="16" y2="13"></line>
+                <line x1="8" y1="17" x2="13" y2="17"></line>
+              </svg>
+            </span>
+            <span class="feature-arrow" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+          <h2 class="feature-title">Syllabus</h2>
+          <p class="feature-desc">Study by subject and topic</p>
+        </a>
+
+        <!-- Progress -->
+        <a href="progress.html" class="feature-card">
+          <div class="feature-card-top">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="4" y="12" width="3.5" height="8" rx="1"></rect>
+                <rect x="10.25" y="6" width="3.5" height="14" rx="1"></rect>
+                <rect x="16.5" y="10" width="3.5" height="10" rx="1"></rect>
+              </svg>
+            </span>
+            <span class="feature-arrow" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+          <h2 class="feature-title">Progress</h2>
+          <p class="feature-desc">View your analytical progress</p>
+        </a>
+
+        <!-- Bookmarks -->
+        <a href="bookmarks.html" class="feature-card">
+          <div class="feature-card-top">
+            <span class="feature-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"></path>
+              </svg>
+            </span>
+            <span class="feature-arrow" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </div>
+          <h2 class="feature-title">Bookmarks</h2>
+          <p class="feature-desc">Revisit saved questions</p>
+        </a>
+      </section>
+    </div>
+
+    <!-- Bottom Navigation Bar (Reusable across App Screens) -->
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <a href="dashboard.html" class="nav-item active" aria-current="page">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z"></path>
+        </svg>
+        <span>Home</span>
+      </a>
+
+      <a href="syllabus.html" class="nav-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+          <line x1="8" y1="8" x2="16" y2="8"></line>
+          <line x1="8" y1="12" x2="16" y2="12"></line>
+          <line x1="8" y1="16" x2="12" y2="16"></line>
+        </svg>
+        <span>Learn</span>
+      </a>
+
+      <a href="practice.html" class="nav-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 11l3 3L22 4"></path>
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+        </svg>
+        <span>Practices</span>
+      </a>
+
+      <a href="profile.html" class="nav-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
