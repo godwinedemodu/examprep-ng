@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamPrep NG - Email Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-shell auth-screen verify-screen">
+        <section class="auth-body">
+          <h1 class="auth-title">Enter Verification code</h1>
+          <form class="auth-form" action="email-verified.html" method="GET">
+            <div class="otp-group" role="group" aria-label="6-digit verification code">
+                <input type="text" inputmode="numeric" maxlength="1" class="otp-line" aria-label="Digit 1" required />
+                <input type="text" inputmode="numeric" maxlength="1" class="otp-line" aria-label="Digit 2" required />
+                <input type="text" inputmode="numeric" maxlength="1" class="otp-line" aria-label="Digit 3" required />
+                <input type="text" inputmode="numeric" maxlength="1" class="otp-line" aria-label="Digit 4" required />
+                <input type="text" inputmode="numeric" maxlength="1" class="otp-line" aria-label="Digit 5" required />
+                <input type="text" inputmode="numeric" maxlength="1" class="otp-line" aria-label="Digit 6" required />
+            </div>
+            <p class="otp-hint">
+                If you haven't received the OTP please<br />
+                click resend after <span id="countdown">30s</span>
+            </p>
+
+            <div class="verify-actions">
+            <button type="submit" class="btn btn-primary">Verify Email</button>
+            <button type="button" class="btn btn-outline" id="resendBtn" disabled>Resend (30s)</button>
+            </div>
+          </form>
+        </section>
+    </main>
+</body>
+</html>

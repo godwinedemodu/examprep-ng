@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Select Examination</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell onboarding-step-screen">
+    <!-- Top Back Arrow & Step 1 of 4 Progress -->
+    <header class="step-header">
+      <a href="login.html" class="back-btn" aria-label="Go back">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </a>  <div class="step-indicator">
+    <span class="step-label">STEP 1 OF 4</span>
+    <div class="step-bar" aria-hidden="true">
+      <span class="step-segment active"></span>
+      <span class="step-segment"></span>
+      <span class="step-segment"></span>
+      <span class="step-segment"></span>
+    </div>
+  </div>
+
+  <!-- Spacer to keep STEP 1 OF 4 centered -->
+  <span class="header-spacer" aria-hidden="true"></span>
+</header>
+
+<!-- Main Selection Form -->
+<form class="step-form" action="select-subjects.html" method="GET">
+  <div class="step-content">
+    <h1 class="step-title">Which examination are you preparing for?</h1>
+    <p class="step-subtitle">
+      Select your examination to get questions and learning materials tailored to your goals
+    </p>
+
+    <div class="exam-options">
+      <!-- WAEC Card -->
+        <label class="exam-card">
+        <input type="checkbox" name="exam" value="WAEC" class="exam-checkbox sr-only" />
+        <div class="exam-icon-box">
+            <img src="./Asset/Waec_logo.png" alt="WAEC Logo" />
+        </div>
+        <div class="exam-info">
+            <span class="exam-name">WAEC</span>
+            <span class="exam-desc">West Africa Senior School Certificate Examination</span>
+        </div>
+        <span class="exam-radio-circle" aria-hidden="true"></span>
+        </label>
+
+        <!-- JAMB Card -->
+        <label class="exam-card">
+        <input type="checkbox" name="exam" value="JAMB" class="exam-checkbox sr-only" />
+        <div class="exam-icon-box">
+            <img src="./Asset/JAMB_logo.png" alt="JAMB Logo" />
+        </div>
+        <div class="exam-info">
+            <span class="exam-name">JAMB (UTME)</span>
+            <span class="exam-desc">Joint Admission and Matriculation Board</span>
+        </div>
+        <span class="exam-radio-circle" aria-hidden="true"></span>
+        </label>
+    </div>
+
+    <p class="step-note">
+      <span class="note-circle" aria-hidden="true"></span>
+      <span>You can select one or both examination</span>
+    </p>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-pill">Continue</button>
+</form>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
