@@ -1,0 +1,399 @@
+/* ---------- General ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: #eef1f7;
+  font-family: Poppins, Arial, sans-serif;
+  color: #0b1b3f;
+  padding: 24px 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  width: 360px;
+  max-width: 100%;
+  min-height: 720px;
+  background: #fbf8ef;
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 14px 20px 6px;
+}
+
+/* ---------- Login ---------- */
+.brand {
+  text-align: center;
+  font-weight: 700;
+  color: #1450d6;
+  padding: 8px 0 14px;
+}
+
+.hero {
+  background: #1450d6;
+  color: white;
+  text-align: center;
+  padding: 34px 16px 40px;
+}
+
+.hero .cap-ico {
+  font-size: 52px;
+}
+
+.hero h1 {
+  font-size: 30px;
+}
+
+.hero h1 span {
+  color: #7fb0ff;
+}
+
+.hero p {
+  font-size: 14px;
+}
+
+.login {
+  padding: 22px 20px;
+  flex: 1;
+}
+
+.login .lead {
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid #c9d3ea;
+  border-radius: 30px;
+  padding: 0 16px;
+  height: 48px;
+  margin-bottom: 12px;
+}
+
+.pill input {
+  border: 0;
+  background: transparent;
+  flex: 1;
+  font-size: 13px;
+  outline: none;
+  min-width: 0;
+}
+
+.pill button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.forgot {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.btn-dark {
+  width: 100%;
+  background: #0b1b3f;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.signup {
+  text-align: center;
+  font-size: 13px;
+}
+
+.signup a {
+  color: #1450d6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---------- Dashboard ---------- */
+.head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #1450d6;
+  color: white;
+  text-align: center;
+  line-height: 38px;
+}
+
+.head b {
+  display: block;
+  font-size: 16px;
+}
+
+.head small {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.bell {
+  margin-left: auto;
+  font-size: 18px;
+}
+
+.create {
+  background: #2f6fe8;
+  color: white;
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin: 8px 18px;
+  position: relative;
+}
+
+.create small {
+  display: block;
+  font-size: 12px;
+}
+
+.create i {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.stats {
+  background: #1450d6;
+  color: white;
+  border-radius: 16px;
+  margin: 10px 18px;
+  padding: 18px 8px;
+  display: flex;
+  text-align: center;
+  font-size: 13px;
+}
+
+.stats div {
+  width: 33.33%;
+  border-left: 1px solid #6f95ee;
+}
+
+.stats div:first-child {
+  border-left: 0;
+}
+
+.stats b {
+  display: block;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 17px;
+  padding: 12px 18px 8px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 18px;
+}
+
+.qa {
+  width: 48%;
+  height: 112px;
+  margin-bottom: 12px;
+  border: 0;
+  border-radius: 14px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1b2540;
+  cursor: pointer;
+}
+
+.qa span {
+  display: block;
+  font-size: 26px;
+}
+
+.nav {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 6px 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.nav a {
+  text-align: center;
+  color: #0b1b3f;
+  text-decoration: none;
+}
+
+.nav a span {
+  display: block;
+  font-size: 22px;
+}
+
+.nav a.on {
+  color: #1450d6;
+}
+
+/* ---------- Create Assignment ---------- */
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 18px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.top a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #0b1b3f;
+}
+
+.chip {
+  display: block;
+  margin: 6px auto 4px;
+  width: 110px;
+  text-align: center;
+  background: #e9e9ee;
+  border-radius: 20px;
+  padding: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+form {
+  padding: 4px 18px 18px;
+}
+
+label,
+.lbl {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.inp,
+textarea {
+  display: block;
+  width: 100%;
+  background: #f1f1f1;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 13px;
+  resize: none;
+}
+
+textarea {
+  height: 96px;
+}
+
+.two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.two > :nth-child(odd) {
+  width: 63%;
+}
+
+.two > :nth-child(even) {
+  width: 33%;
+}
+
+.sw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.sw input {
+  width: 20px;
+  height: 20px;
+  accent-color: #4a9d4a;
+}
+
+.attach {
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.attach b {
+  color: #1450d6;
+  font-size: 13px;
+}
+
+.stu {
+  font-size: 13px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.btns button {
+  width: 48%;
+  height: 44px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.draft {
+  background: #e9e9ee;
+  color: #0b1b3f;
+}
+
+.pub {
+  background: #1450d6;
+  color: white;
+}

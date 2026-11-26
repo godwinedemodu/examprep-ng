@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ExamPrep NG – Create Assignment</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<section class="phone">
+  <div class="status"><span>9:41 Tue Apr 1</span><span>100%</span></div>
+
+  <div class="top"><a href="#" aria-label="Back">←</a>Create Assignment<span></span></div>
+  <span class="chip">Class ⌄</span>
+
+  <form onsubmit="return false">
+    <label for="t">Assignment Title</label>
+    <input id="t" class="inp" placeholder="Eg. Photosynthesis Lab Report">
+
+    <label for="d">Instructions/Description</label>
+    <textarea id="d">Describe the task for students.
+• Explain the process of Photosynthesis.
+• Include a diagram and label the key parts.
+• Submit as PDF of handwritten work.</textarea>
+
+    <div class="two">
+      <span class="lbl">Due Date</span>
+      <span class="lbl" style="text-align:right">Points</span>
+      <div class="inp">📅 Fri, Oct 25 · 11:59 PM</div>
+      <input class="inp" value="50 point" aria-label="Points">
+    </div>
+
+    <span class="lbl">Settings</span>
+    <label class="sw" style="font-weight:400;margin:0">Allow late submission<input type="checkbox" checked></label>
+    <label class="sw" style="font-weight:400;margin:0">Attach to Classroom<input type="checkbox" checked></label>
+
+    <span class="lbl">Attachments</span>
+    <div class="attach">📎 <b style="display:inline">+ Add resources</b><br>PDF, Images, Google Drive, or Links</div>
+
+    <span class="lbl">Students</span>
+    <div class="stu">All students in Science class · 24 Students</div>
+
+    <div class="btns">
+      <button class="draft">Save as Draft</button>
+      <button class="pub">Publish Assignment</button>
+    </div>
+  </form>
+</section>
+</body>
+</html>
