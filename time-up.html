@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Time Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell time-up-screen">
+    <!-- Top Centered Title -->
+    <header class="time-up-header">
+      <h1 class="time-up-header-title">CBT Examination</h1>
+    </header>
+
+    <!-- Center Calculator Illustration & Time Up Status -->
+    <section class="time-up-body" role="status" aria-live="polite">
+      <div class="calculator-illustration" aria-hidden="true">
+        <svg width="144" height="176" viewBox="0 0 144 176" fill="none">
+          <!-- Blue Calculator Body with Black Outline -->
+          <rect x="3" y="3" width="138" height="170" rx="14" fill="#2584ff" stroke="#0f172a" stroke-width="3.5" />
+          <!-- Cyan Display Screen with White Border -->
+          <rect x="26" y="26" width="92" height="38" rx="2" fill="#46cbf7" stroke="#ffffff" stroke-width="2.5" />
+          <!-- Multiply Symbol (X) -->
+          <line x1="28" y1="106" x2="56" y2="134" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+          <line x1="56" y1="106" x2="28" y2="134" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+          <!-- Equals Symbol (=) -->
+          <line x1="86" y1="112" x2="116" y2="112" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+          <line x1="86" y1="128" x2="116" y2="128" stroke="#ffffff" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <h2 class="time-up-heading">Time Up!</h2>
+      <p class="time-up-message">
+        Your answers are being<br />
+        submitted automatically...
+      </p>
+    </section>
+
+    <!-- Bottom Clock Spinner & Please Wait -->
+    <footer class="time-up-footer">
+      <div class="wait-clock-icon" aria-hidden="true">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+          <circle cx="28" cy="28" r="24" stroke="#8ab4f8" stroke-width="4" />
+          <polyline points="28 16 28 28 36 35" stroke="#8ab4f8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <p class="wait-label">Please wait...</p>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

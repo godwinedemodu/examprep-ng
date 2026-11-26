@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Focus Mode</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell focus-screen">
+    <!-- Top Header: Back Arrow & Centered Title -->
+    <header class="focus-header">
+      <a href="dashboard.html" class="back-btn" aria-label="Back to dashboard">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </a>
+
+      <h1 class="focus-header-title">Focus Mode</h1>
+
+      <span class="header-spacer" aria-hidden="true"></span>
+    </header>
+
+    <!-- Main Focus Mode Content -->
+    <section class="focus-body">
+      <!-- Blue Target & Arrow Bullseye Illustration -->
+      <div class="focus-target-illustration" aria-hidden="true">
+        <svg width="176" height="176" viewBox="0 0 176 176" fill="none">
+          <!-- Outer Blue Ring -->
+          <circle cx="84" cy="92" r="64" stroke="#0044e3" stroke-width="14" />
+          <!-- Middle Blue Ring -->
+          <circle cx="84" cy="92" r="38" stroke="#0044e3" stroke-width="14" />
+          <!-- Center Bullseye Dot -->
+          <circle cx="84" cy="92" r="14" fill="#0044e3" />
+          <!-- White Knockout Gap for Arrow Shaft -->
+          <line x1="88" y1="88" x2="148" y2="28" stroke="#ffffff" stroke-width="18" stroke-linecap="round" />
+          <!-- Blue Arrow Shaft -->
+          <line x1="86" y1="90" x2="152" y2="24" stroke="#0044e3" stroke-width="9" stroke-linecap="round" />
+          <!-- Blue Arrow Tail Feathers -->
+          <polygon points="134,26 152,8 156,22 140,38" fill="#0044e3" />
+          <polygon points="150,42 168,24 154,20 138,36" fill="#0044e3" />
+        </svg>
+      </div>
+
+      <h2 class="focus-heading">Focus Mode</h2>
+      <p class="focus-subtitle">
+        Minimize distractions and<br />
+        focus on your studies.
+      </p>
+
+      <!-- Checklist Benefits -->
+      <ul class="focus-checklist">
+        <li class="focus-check-item">
+          <span class="focus-check-badge" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span>No notifications</span>
+        </li>
+
+        <li class="focus-check-item">
+          <span class="focus-check-badge" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span>No other app switching</span>
+        </li>
+
+        <li class="focus-check-item">
+          <span class="focus-check-badge" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </span>
+          <span>Clean and distraction - free UI</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Bottom CTA & Secondary Link -->
+    <footer class="focus-footer">
+      <a href="cbt-mock.html" class="btn focus-start-btn">Start Focus Mode</a>
+      <a href="dashboard.html" class="focus-later-link">Maybe Later</a>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

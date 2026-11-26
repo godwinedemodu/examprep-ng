@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Report An Issue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell report-screen">
+    <!-- Top Header: Back Arrow & Centered Title -->
+    <header class="report-header">
+      <a href="dashboard.html" class="back-btn" aria-label="Back to dashboard">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </a>
+
+      <h1 class="report-title">Report An Issue</h1>
+
+      <span class="header-spacer" aria-hidden="true"></span>
+    </header>
+
+    <!-- Main Report Content -->
+    <section class="report-body">
+      <!-- Red Warning Triangle Icon -->
+      <div class="warning-triangle-icon" aria-hidden="true">
+        <svg width="164" height="148" viewBox="0 0 164 148" fill="none">
+          <path d="M68.5 11.5C74.5 1.2 89.5 1.2 95.5 11.5L157.5 118.5C163.5 128.8 156 141.8 144 141.8H20C8 141.8 0.5 128.8 6.5 118.5L68.5 11.5Z" fill="#dc2626" />
+          <rect x="75" y="46" width="14" height="52" rx="7" fill="#ffffff" />
+          <circle cx="82" cy="116" r="8" fill="#ffffff" />
+        </svg>
+      </div>
+
+      <h2 class="report-heading">Lets Us Know</h2>
+      <p class="report-subtitle">
+        Help us improve. Report any<br />
+        issue you encounter.
+      </p>
+
+      <!-- Report Issue Form -->
+      <form class="report-form" action="dashboard.html" method="get">
+        <!-- Issue Type Dropdown -->
+        <div class="select-wrapper">
+          <select name="issue_type" class="report-select" aria-label="Select Issue Type" required>
+            <option value="" disabled selected>Select Issue Type</option>
+            <option value="wrong-answer">Wrong Question or Answer</option>
+            <option value="app-bug">App Bug / Screen Freeze</option>
+            <option value="timer-issue">CBT Timer Issue</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="select-chevron" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </span>
+        </div>
+
+        <!-- Issue Description Textarea -->
+        <textarea
+          name="issue_description"
+          class="report-textarea"
+          placeholder="Describe the issue..."
+          aria-label="Describe the issue"
+          required
+        ></textarea>
+
+        <!-- Attach Screenshot File Picker -->
+        <label class="attach-box">
+          <input type="file" name="screenshot" accept="image/*" class="sr-only" />
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
+          </svg>
+          <span class="attach-label">
+            Attach Screenshot<br />
+            (Optional)
+          </span>
+        </label>
+
+        <!-- Submit Report Pill Button -->
+        <button type="submit" class="btn report-submit-btn">Submit Report</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Report Sent</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell report-sent-screen">
+    <section class="report-sent-content" role="status" aria-live="polite">
+      <!-- Green Rounded Square Badge with Bold White Checkmark -->
+      <div class="report-sent-badge" aria-hidden="true">
+        <svg width="186" height="186" viewBox="0 0 186 186" fill="none">
+          <rect x="0" y="0" width="186" height="186" rx="22" fill="#3cb14a" />
+          <path d="M46 96L77 127L140 60" stroke="#f3f4f6" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+
+      <h1 class="report-sent-heading">Report Sent!</h1>
+      <p class="report-sent-message">
+        Thank you, Your report<br />
+        has been received.
+      </p>
+
+      <a href="dashboard.html" class="btn btn-primary report-sent-cta-btn">Back to Dashboard</a>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

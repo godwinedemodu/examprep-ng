@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Bookmarks</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell bookmarks-screen">
+    <!-- Top Header: Back Arrow & Centered Title -->
+    <header class="bookmarks-header">
+      <a href="dashboard.html" class="back-btn" aria-label="Back to dashboard">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </a>
+
+      <h1 class="bookmarks-title">Bookmarks</h1>
+
+      <span class="header-spacer" aria-hidden="true"></span>
+    </header>
+
+    <!-- Main Bookmarks Body -->
+    <section class="bookmarks-body">
+      <!-- 3 Filter Pill Tabs -->
+      <div class="filter-pills-row" role="tablist" aria-label="Bookmark categories">
+        <button type="button" class="filter-pill active" role="tab" aria-selected="true">All</button>
+        <button type="button" class="filter-pill" role="tab" aria-selected="false">Questions</button>
+        <button type="button" class="filter-pill" role="tab" aria-selected="false">Topics</button>
+      </div>
+
+      <!-- Bookmarked Items List -->
+      <div class="bookmark-list">
+        <!-- Item 1: Mathematics - Algebra -->
+        <article class="bookmark-item">
+          <div class="bookmark-icon-tile tile-blue" aria-hidden="true">
+            <svg width="46" height="46" viewBox="0 0 48 48" fill="none">
+              <path d="M8 26L15 37L24 14H41" stroke="#03154b" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+              <line x1="27" y1="24" x2="38" y2="35" stroke="#03154b" stroke-width="4.2" stroke-linecap="round" />
+              <line x1="38" y1="24" x2="27" y2="35" stroke="#03154b" stroke-width="4.2" stroke-linecap="round" />
+            </svg>
+          </div>
+
+          <div class="bookmark-info">
+            <h2 class="bookmark-subject">Mathematics</h2>
+            <p class="bookmark-topic">Algebra</p>
+          </div>
+
+          <button type="button" class="bookmark-ribbon-btn" aria-label="Remove Mathematics Algebra bookmark">
+            <svg width="26" height="32" viewBox="0 0 24 30" fill="#0066ff">
+              <path d="M3 0H21C22.6569 0 24 1.34315 24 3V29.2C24 29.95 23.16 30.4 22.53 29.98L12 23L1.47 29.98C0.84 30.4 0 29.95 0 29.2V3C0 1.34315 1.34315 0 3 0Z" />
+            </svg>
+          </button>
+        </article>
+
+        <!-- Item 2: Physics - Kinematics -->
+        <article class="bookmark-item">
+          <div class="bookmark-icon-tile tile-blue" aria-hidden="true">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#0066ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 3h6"></path>
+              <path d="M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"></path>
+              <path d="M6.8 15h10.4L18.5 18a1.5 1.5 0 0 1-1.3 2H6.8a1.5 1.5 0 0 1-1.3-2l1.3-3z" fill="#0066ff"></path>
+            </svg>
+          </div>
+
+          <div class="bookmark-info">
+            <h2 class="bookmark-subject">Physics</h2>
+            <p class="bookmark-topic">Kinematics</p>
+          </div>
+
+          <button type="button" class="bookmark-ribbon-btn" aria-label="Remove Physics Kinematics bookmark">
+            <svg width="26" height="32" viewBox="0 0 24 30" fill="#0066ff">
+              <path d="M3 0H21C22.6569 0 24 1.34315 24 3V29.2C24 29.95 23.16 30.4 22.53 29.98L12 23L1.47 29.98C0.84 30.4 0 29.95 0 29.2V3C0 1.34315 1.34315 0 3 0Z" />
+            </svg>
+          </button>
+        </article>
+
+        <!-- Item 3: Chemistry - Chemical Bonding -->
+        <article class="bookmark-item">
+          <div class="bookmark-icon-tile tile-green" aria-hidden="true">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#3aa856" stroke-width="1.6">
+              <circle cx="12" cy="12" r="1.6" fill="#3aa856"></circle>
+              <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(30 12 12)"></ellipse>
+              <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(-30 12 12)"></ellipse>
+              <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(90 12 12)"></ellipse>
+            </svg>
+          </div>
+
+          <div class="bookmark-info">
+            <h2 class="bookmark-subject">Chemistry</h2>
+            <p class="bookmark-topic">Chemical Bonding</p>
+          </div>
+
+          <button type="button" class="bookmark-ribbon-btn" aria-label="Remove Chemistry Chemical Bonding bookmark">
+            <svg width="26" height="32" viewBox="0 0 24 30" fill="#0066ff">
+              <path d="M3 0H21C22.6569 0 24 1.34315 24 3V29.2C24 29.95 23.16 30.4 22.53 29.98L12 23L1.47 29.98C0.84 30.4 0 29.95 0 29.2V3C0 1.34315 1.34315 0 3 0Z" />
+            </svg>
+          </button>
+        </article>
+
+        <!-- Item 4: Biology - Cells -->
+        <article class="bookmark-item">
+          <div class="bookmark-icon-tile tile-green" aria-hidden="true">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none">
+              <path d="M10 21C10 15 13 9 19 5C19 11 16 16 10 17" fill="#3aa856" />
+              <path d="M10 17C6 16 4 13 4 9C8 9 10 12 10 17Z" fill="#3aa856" />
+              <path d="M10 21V13" stroke="#3aa856" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+
+          <div class="bookmark-info">
+            <h2 class="bookmark-subject">Biology</h2>
+            <p class="bookmark-topic">Cells</p>
+          </div>
+
+          <button type="button" class="bookmark-ribbon-btn" aria-label="Remove Biology Cells bookmark">
+            <svg width="26" height="32" viewBox="0 0 24 30" fill="#0066ff">
+              <path d="M3 0H21C22.6569 0 24 1.34315 24 3V29.2C24 29.95 23.16 30.4 22.53 29.98L12 23L1.47 29.98C0.84 30.4 0 29.95 0 29.2V3C0 1.34315 1.34315 0 3 0Z" />
+            </svg>
+          </button>
+        </article>
+      </div>
+
+      <!-- Clear All Button -->
+      <button type="button" class="clear-all-btn" id="clearAllBookmarks">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#0066ff" aria-hidden="true">
+          <path d="M9 3h6l1 2h4v2H4V5h4l1-2zm1 6h2v9h-2V9zm4 0h2v9h-2V9zM6 8h12l-1 13a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 8z" />
+        </svg>
+        <span>Clear All</span>
+      </button>
+    </section>
+
+    <!-- Bottom Navigation Bar (Learn Active) -->
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <a href="dashboard.html" class="nav-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.5z"></path>
+        </svg>
+        <span>Home</span>
+      </a>
+
+      <a href="syllabus.html" class="nav-item active" aria-current="page">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+          <line x1="8" y1="8" x2="16" y2="8"></line>
+          <line x1="8" y1="12" x2="16" y2="12"></line>
+          <line x1="8" y1="16" x2="12" y2="16"></line>
+        </svg>
+        <span>Learn</span>
+      </a>
+
+      <a href="practice.html" class="nav-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 11l3 3L22 4"></path>
+          <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+        </svg>
+        <span>Practices</span>
+      </a>
+
+      <a href="profile.html" class="nav-item">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Profile</span>
+      </a>
+    </nav>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

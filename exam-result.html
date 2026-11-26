@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Your Results</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell result-screen">
+    <section class="result-body">
+      <!-- Yellow Trophy with White Star -->
+      <div class="result-trophy" aria-hidden="true">
+        <svg width="164" height="164" viewBox="0 0 160 160" fill="none">
+          <!-- Cup Body -->
+          <path d="M44 22H116V70C116 90 100 106 80 106C60 106 44 90 44 70V22Z" fill="#f7e559" />
+          <!-- Top Rim -->
+          <rect x="40" y="16" width="80" height="10" rx="5" fill="#f7e559" />
+          <!-- Left Handle -->
+          <path d="M44 34H26V54C26 68 35 76 47 78" stroke="#f7e559" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+          <!-- Right Handle -->
+          <path d="M116 34H134V54C134 68 125 76 113 78" stroke="#f7e559" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" />
+          <!-- Stem & Base -->
+          <rect x="73" y="104" width="14" height="26" fill="#f7e559" />
+          <rect x="52" y="128" width="56" height="11" rx="3" fill="#f7e559" />
+          <!-- Center White Star -->
+          <polygon points="80,43 86.2,55.6 100,57.6 90,67.3 92.4,81 80,74.5 67.6,81 70,67.3 60,57.6 73.8,55.6" fill="#ffffff" />
+        </svg>
+      </div>
+
+      <h1 class="result-heading">Your Results</h1>
+      <p class="result-percentage">78%</p>
+      <p class="result-fraction">39 out of 50</p>
+
+      <!-- Pass Status Pill -->
+      <div class="result-status-badge" role="status">Pass</div>
+
+      <!-- 3-Column Score Breakdown -->
+      <div class="result-stats-grid" aria-label="Score breakdown">
+        <div class="result-stat-card">
+          <span class="result-stat-label">Correct</span>
+          <span class="result-stat-value">39</span>
+        </div>
+
+        <div class="result-stat-card">
+          <span class="result-stat-label">Incorrect</span>
+          <span class="result-stat-value text-danger">11</span>
+        </div>
+
+        <div class="result-stat-card">
+          <span class="result-stat-label">Time</span>
+          <span class="result-stat-value">42 mins</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Dual Action Buttons -->
+    <footer class="result-footer-actions">
+      <a href="practice.html" class="btn result-btn-primary">Review Answers</a>
+      <a href="dashboard.html" class="btn result-btn-outline">Back to Dashboard</a>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamPrep NG — Focused Mode Settings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell focused-settings-screen">
+    <!-- Top Header: Back Arrow & Title -->
+    <header class="focused-settings-header">
+      <a href="focus-mode.html" class="back-btn" aria-label="Back to Focus Mode">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </a>
+
+      <h1 class="focused-settings-header-title">Focused mode</h1>
+    </header>
+
+    <!-- Main Focused Mode Settings Content -->
+    <section class="focused-settings-body">
+      <!-- Blue Target & Arrow Bullseye Illustration -->
+      <div class="focused-settings-target" aria-hidden="true">
+        <svg width="144" height="144" viewBox="0 0 176 176" fill="none">
+          <circle cx="84" cy="92" r="64" stroke="#0044e3" stroke-width="14" />
+          <circle cx="84" cy="92" r="38" stroke="#0044e3" stroke-width="14" />
+          <circle cx="84" cy="92" r="14" fill="#0044e3" />
+          <line x1="88" y1="88" x2="148" y2="28" stroke="#ffffff" stroke-width="18" stroke-linecap="round" />
+          <line x1="86" y1="90" x2="152" y2="24" stroke="#0044e3" stroke-width="9" stroke-linecap="round" />
+          <polygon points="134,26 152,8 156,22 140,38" fill="#0044e3" />
+          <polygon points="150,42 168,24 154,20 138,36" fill="#0044e3" />
+        </svg>
+      </div>
+
+      <h2 class="focused-settings-heading">Stay Focused</h2>
+      <p class="focused-settings-subtitle">
+        Create a distraction-free environment and<br />
+        make your study time count.
+      </p>
+
+      <!-- Master Focused Mode Toggle -->
+      <div class="master-toggle-block">
+        <div class="master-toggle-row">
+          <span class="master-toggle-title">Focused mode</span>
+          <label class="ios-switch">
+            <input type="checkbox" name="focused_mode" aria-label="Toggle Focused mode" />
+            <span class="ios-slider"></span>
+          </label>
+        </div>
+        <p class="master-toggle-desc">
+          Automatically activates during practice and CBT mock exams.
+        </p>
+      </div>
+
+      <!-- Notification Settings Group -->
+      <div class="notif-settings-section">
+        <h3 class="notif-section-title">Notification Settings</h3>
+
+        <div class="notif-settings-card">
+          <!-- Row 1: Mute social notifications -->
+          <div class="notif-setting-row">
+            <span class="notif-setting-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                <path d="M18.63 13A17.89 17.89 0 0 1 18 8"></path>
+                <path d="M6.26 6.26A5.86 5.86 0 0 0 6 8c0 7-3 9-3 9h14"></path>
+                <path d="M18 8a6 6 0 0 0-9.33-5"></path>
+                <line x1="2" y1="2" x2="22" y2="22"></line>
+              </svg>
+            </span>
+
+            <div class="notif-setting-text">
+              <span class="notif-setting-label">Mute social notifications</span>
+              <span class="notif-setting-sub">Silence social and chat notifications.</span>
+            </div>
+
+            <label class="ios-switch">
+              <input type="checkbox" name="mute_social" aria-label="Mute social notifications" />
+              <span class="ios-slider"></span>
+            </label>
+          </div>
+
+          <!-- Row 2: Allow phone calls -->
+          <div class="notif-setting-row">
+            <span class="notif-setting-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </span>
+
+            <div class="notif-setting-text">
+              <span class="notif-setting-label">Allow phone calls</span>
+              <span class="notif-setting-sub">Receive important incoming calls.</span>
+            </div>
+
+            <label class="ios-switch">
+              <input type="checkbox" name="allow_calls" aria-label="Allow phone calls" />
+              <span class="ios-slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Good to Know Info Note -->
+      <div class="good-to-know-box">
+        <span class="info-circle-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+        </span>
+
+        <div class="good-to-know-content">
+          <h4 class="good-to-know-title">Good to know</h4>
+          <p class="good-to-know-text">
+            Focus Mode turns on automatically when you begin practising or taking a CBT mock exam. You can manage your preferences in Settings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Save Changes Button -->
+    <footer class="focused-settings-footer">
+      <a href="dashboard.html" class="btn focused-save-btn">Save Changes</a>
+    </footer>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
